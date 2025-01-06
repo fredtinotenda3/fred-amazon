@@ -1,3 +1,4 @@
+import { GoogleSignInForm } from "./google-signin-form";
 import { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
@@ -37,6 +38,10 @@ export default async function SignIn(props: {
         <CardContent>
           <div>
             <CredentialsSignInForm />
+          </div>
+          <SeparatorWithOr />
+          <div className="mt-4">
+            <GoogleSignInForm />
           </div>
         </CardContent>
       </Card>
