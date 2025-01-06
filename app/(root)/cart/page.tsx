@@ -173,6 +173,7 @@ export default function CartPage() {
                     </span>{" "}
                   </div>
                   <Button
+                    // router.push("/checkout")
                     onClick={() => router.push("/checkout")}
                     className="rounded-full w-full"
                   >
