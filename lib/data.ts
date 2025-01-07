@@ -1027,7 +1027,7 @@ const data: Data = {
       isPublished: true,
     },
   ],
-  //   products,
+  settings: [],
 };
 
 export default data;
