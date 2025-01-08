@@ -44,7 +44,7 @@ export default function CartSidebar() {
               )}
               href="/cart"
             >
-              Go to Cart
+              Go to Cart.
             </Link>
             <Separator className="mt-3" />
           </div>
