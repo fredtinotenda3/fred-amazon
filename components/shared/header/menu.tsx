@@ -4,17 +4,15 @@ import {
   SheetContent,
   SheetDescription,
   SheetHeader,
-  // SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import CartButton from "./cart-button";
 import UserButton from "./user-button";
 import ThemeSwitcher from "./theme-switcher";
-// import LanguageSwitcher from './language-switcher'
-// import { useTranslations } from "next-intl";
+// import LanguageSwitcher from "./language-switcher";
+// import { useTranslations } from "";
 
-// { forAdmin = false }: { forAdmin?: boolean }
-const Menu = () => {
+const Menu = ({ forAdmin = false }: { forAdmin?: boolean }) => {
   // const t = useTranslations();
   return (
     <div className="flex justify-end">
@@ -22,7 +20,7 @@ const Menu = () => {
         {/* <LanguageSwitcher /> */}
         <ThemeSwitcher />
         <UserButton />
-        {/* {forAdmin ? null : <CartButton />} */}
+        {forAdmin ? null : <CartButton />}
       </nav>
       <nav className="md:hidden">
         <Sheet>
