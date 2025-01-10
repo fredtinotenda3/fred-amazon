@@ -6,8 +6,7 @@ import React from "react";
 import { formUrlQuery } from "@/lib/utils";
 
 import { Button } from "../ui/button";
-import { ChevronRight } from "lucide-react";
-// import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 // import { useTranslations } from "next-intl";
 
 type PaginationProps = {
@@ -42,9 +41,9 @@ const Pagination = ({ page, totalPages, urlParamName }: PaginationProps) => {
         disabled={Number(page) <= 1}
         className="w-24"
       >
-        {/* <ChevronLeft /> {t("Search.Previous")} */}
+        <ChevronLeft /> {"Search.Previous"}
       </Button>
-      {/* {t("Search.Page")} {page} {t("Search.of")} {totalPages} */}
+      {"Search.Page"} {page} {"Search.of"} {totalPages}
       <Button
         size="lg"
         variant="outline"
@@ -52,7 +51,7 @@ const Pagination = ({ page, totalPages, urlParamName }: PaginationProps) => {
         disabled={Number(page) >= totalPages}
         className="w-24"
       >
-        {/* {t("Search.Next")} <ChevronRight /> */}
+        {"Search.Next"} <ChevronRight />
       </Button>
     </div>
   );
